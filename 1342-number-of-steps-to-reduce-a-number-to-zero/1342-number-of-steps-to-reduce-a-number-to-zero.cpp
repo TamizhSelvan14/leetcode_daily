@@ -1,0 +1,34 @@
+class Solution {
+public:
+    int numberOfSteps(int num) {
+        
+        
+        int count=0;
+        
+        // naive approach
+//         while(num>0){
+            
+//             if(num%2==0){
+//                 num=num/2;
+//                 count++;
+//             }else{
+//                 num--;
+//                 count++;
+//             }
+            
+//         }
+        
+        
+        
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        return num ? log2(num)+__builtin_popcount(num) : 0;
+    }
+};
