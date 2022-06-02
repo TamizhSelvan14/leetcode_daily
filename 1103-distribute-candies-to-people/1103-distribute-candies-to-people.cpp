@@ -10,7 +10,7 @@ public:
                     if( (temp) <candies){
                         ans[i%n]+=temp;
                         candies-=temp;
-                        cout<<temp<<" ";
+                        // cout<<temp<<" ";
                         temp++;
                         i++;
                     }else{
