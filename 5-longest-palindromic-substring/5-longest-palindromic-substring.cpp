@@ -1,45 +1,7 @@
 class Solution {
 public:
-    
-//     //brute force 0(n^3) TLE
-//     bool isPalindrome(string s,int start,int end){
-        
-        
-//         while(start<=end){
-//             if(s[start]!=s[end]){
-//                 return false;
-//             }
-            
-//             start++;
-//             end--;
-//         }
-        
-//         return true;
-//     }
-    
-//     string longestPalindrome(string s) {
-        
-        
-//         int n=s.size();
-//         string ans="";
-//         for(int i=0;i<n;i++){
-//             for(int j=i;j<n;j++){
-                
-//                 if(isPalindrome(s,i,j))
-//                 {
-//                     if(ans.size()<(j-i)+1){
-//                         ans=s.substr(i,j-i+1);
-//                     }
-//                 }
-//             }
-//         }
-        
-//         return ans;
-        
-//     }
-    
     string longestPalindrome(string s) {
-    
+        
         int n=s.size();
         
         bool dp[n][n];
@@ -87,10 +49,4 @@ public:
       return s.substr(start, maxlength);
         
     }
-    
-    
-    
-    
-    
-    
 };
