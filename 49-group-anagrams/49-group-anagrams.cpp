@@ -13,22 +13,22 @@ public:
         //ant->nat,tan
         //aet->ate,eat,tea
         
-        for(auto x:strs){
-            string temp=x;
-            sort(begin(temp),end(temp));
+      
+        for(auto s:strs){
+            string temp=s;
+            sort(temp.begin(),temp.end());
             
-            umap[temp].push_back(x);
+            umap[temp].push_back(s);
             
         }
         
-        //then pushing the vector
+        
         for(auto x:umap){
             ans.push_back(x.second);
         }
-            
+        
+        
+        
         return ans;
-        
-        
-        
     }
 };
