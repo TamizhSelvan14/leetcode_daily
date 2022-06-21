@@ -1,46 +1,47 @@
 class Solution {
 public:
     
-   
-    
-    int dfs(vector<vector<int>> &dp,int i,int j,int row,int col,vector<vector<int>> &matrix){
+    int solve(int i,int j,vector<vector<int>> grid,vector<vector<int>> &dp){
         
-        if((i<0 || i>=row || j<0 || j>=col))
+          
+        if(i<0 or j<0)
             return 0;
         
-               if(matrix[i][j])
-             return dp[i][j]=0;
+                
+        if(grid[i][j]==1)
+            return 0;
         
         
-        if(i == row-1 and j==col-1)
+        if((i==0 and j==0) )
             return 1;
+             
         
- 
-        
-        if(dp[i][j])
+        if(dp[i][j]!=-1)
             return dp[i][j];
+      
         
-       return dp[i][j]=dfs(dp,i+1,j,row,col,matrix)+dfs(dp,i,j+1,row,col,matrix);
+        
+   
+        
+        int left=solve(i-1,j,grid,dp);
+        int right=solve(i,j-1,grid,dp);
+        
+        return dp[i][j]=left+right;
         
         
-        // return dp[i][j];
     }
     
     
-    
-    
-    
     int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) {
-        // int ans=0;
-        int row=obstacleGrid.size();
-        int col=obstacleGrid[0].size();
+        int i=obstacleGrid.size();
+        int j=obstacleGrid[0].size();
+        
+        vector<vector<int>> dp(i,vector<int> (j,-1));
+        
+        return solve(i-1,j-1,obstacleGrid,dp);
+       
         
         
-        vector<vector<int>> dp (row,vector<int>(col));
         
-        
-       return dfs(dp,0,0,row,col,obstacleGrid);
-        
-        
-        }
+    }
 };
