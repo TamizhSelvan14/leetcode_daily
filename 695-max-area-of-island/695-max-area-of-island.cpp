@@ -18,10 +18,6 @@ public:
             dfs(grid,i,j-1,row,col,area); //left
            
         
-       
-        
-         // cout<<area<<" ";
-        
         return;
     }
     
