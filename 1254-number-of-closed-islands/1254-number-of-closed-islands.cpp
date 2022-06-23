@@ -1,46 +1,53 @@
 class Solution {
 public:
-//     note:
-//     here we need to check the 0s island is fully covered by the 1s island by all four sides so we use four bool 
+    bool solve(int i,int j,vector<vector<int>>& grid,int rows,int cols){
         
-//         why four bool?
-//         beacuse if we dont use four bools then is any one side return false  every other returns false
-    
-    
-    bool dfs(vector<vector<int>>&grid,int i,int j){
         
-        if(i<0 || j<0 || i>=grid.size() || j>=grid[0].size() )
+        if(i<0 or j<0 or i>=rows or j>=cols ){
             return false;
+        }
         
         if(grid[i][j]==1)
             return true;
+       
         
-            
-            grid[i][j]=1;
-            
-            bool down=dfs(grid,i+1,j);
-            bool right=dfs(grid,i,j+1);
-            bool up=dfs(grid,i-1,j);
-            bool left=dfs(grid,i,j-1);
-            
+        grid[i][j]=1;
+        
+        bool a=solve(i+1,j,grid,rows,cols);
+        
+          bool b=solve(i,j+1,grid,rows,cols);
+          bool c=solve(i-1,j,grid,rows,cols);
+          bool d=solve(i,j-1,grid,rows,cols);
+        
+        return (a&&b&&c&&d);
         
         
-        return (up&& down && left && right);
     }
     
     
+    
+    
     int closedIsland(vector<vector<int>>& grid) {
-        int component=0;
-        for(int i=1;i<grid.size();i++){
-            for(int j=1;j<grid[0].size();j++){
+        int rows=grid.size();
+        int cols=grid[0].size();
+        
+        int ans=0;
+        
+        for(int i=0;i<rows;i++){
+            for(int j=0;j<cols;j++){
+                
                 if(grid[i][j]==0){
-                    if(dfs(grid,i,j)){
-                     
-                    component++;   
-                    }
-                }
+                    
+                    if(solve(i,j,grid,rows,cols))
+                        ans++;
+                    
+                }    
+                
             }
         }
-        return component;
+        
+        
+        
+        return ans;
     }
 };
