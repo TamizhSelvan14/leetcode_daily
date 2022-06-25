@@ -4,10 +4,9 @@ public:
         
         int n=security.size();
         
-        vector<int> nonIncrease (n);
-        vector<int> nonDecrease (n);
-        fill(nonIncrease.begin(), nonIncrease.end(), 0);
-        fill(nonDecrease.begin(), nonDecrease.end(), 0);
+        vector<int> nonIncrease (n,0);
+        vector<int> nonDecrease (n,0);
+        
         
         for(int i=1;i<n;i++){
             if(security[i]<=security[i-1]){
