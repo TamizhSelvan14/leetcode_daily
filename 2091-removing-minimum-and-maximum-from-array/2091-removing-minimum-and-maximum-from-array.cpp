@@ -28,16 +28,11 @@ public:
             swap(maxIndex,minIndex);
         }
         
-//         int t1=maxIndex;
-//         int t1=minIndex;
-//         minIndex=min(maxIndex,minIndex);
-//         maxIndex=max(maxIndex,minIndex);
+        int fromStart=maxIndex+1;
+        int fromEnd=n-minIndex+1;
+        int frombothEnd=(minIndex+1)+(n-maxIndex+1);
         
-        // cout<<maxIndex<<" "<<minIndex;
-        
-        // cout<<maxIndex+1<<" "<<n-minIndex+1<<" "<<(minIndex+1)<<" "<<" "<<(n-maxIndex);
-        
-        return min(min(maxIndex+1,n-minIndex+1),(minIndex+1)+(n-maxIndex+1));
+        return min(min(fromStart,fromEnd),frombothEnd);
         
         
         
