@@ -17,17 +17,44 @@ public:
         
         int n=s.size();
         int ans=0;
-        for(int i=0;i<n;i++){
-            for(int j=i;j<n;j++){
+        
+        
+        
+        for(int i=0;i<s.size();i++){
+        
+            //for odd length sub-string
+            int left=i,right=i;
+            
+            while(left>=0 and right<s.size() and s[left]==s[right]){
                 
-                string str=s.substr(i,(j-i+1));
-                // cout<<str<<endl;
-                if(ispalindrome(str)){
+               
                     ans++;
-                }
+                    left--;
+                    right++;
                 
             }
+            
+            
+            left=i;
+            right=i+1;
+            
+            //calculating even length substrings
+            
+            
+            while(left>=0 and right<s.size() and s[left]==s[right]){
+                
+               
+                    ans++;
+                    left--;
+                    right++;
+                
+            }
+            
+            
+            
         }
+        
+        
         
         
         return ans;
