@@ -11,24 +11,20 @@ public:
         
         sort(boxtypes.begin(),boxtypes.end(),comp);
         
-        // for(auto x:boxtypes)
-        //     cout<<x[0]<<" "<<x[1]<<endl;
         
         
         for(auto box:boxtypes){
             
-            if(trucksize>0){
+            // if(trucksize>0){
                 if(trucksize>=box[0]){
                     ans+=box[0]*box[1];
                     trucksize-=box[0];
-                    // cout<<ans<<" ";
                 }else{
                     ans+=trucksize*box[1];
                     trucksize=0;
-                    // cout<<ans<<" ";
                 }
             
-            }
+            // }
             
         }
         
