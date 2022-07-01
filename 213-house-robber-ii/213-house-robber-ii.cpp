@@ -22,6 +22,8 @@ public:
         
         if(nums.size()==1)
             return nums[0];
+        else if(nums.size()==2)
+            return max(nums[0],nums[1]);
         
         
         //without last charcter
@@ -29,16 +31,32 @@ public:
         //removinf fist character
         vector<int> nums2(nums.begin()+1,nums.end());
         
-        vector<int> dp1(nums1.size(),-1);
+        vector<int> dp1(nums1.size(),0);
         
-        vector<int> dp2(nums2.size(),-1);
+        vector<int> dp2(nums2.size(),0);
         
-        int first=solve(nums1,nums1.size()-1,dp1);
+//         int first=solve(nums1,nums1.size()-1,dp1);
         
-        int second=solve(nums2,nums2.size()-1,dp2);
+//         int second=solve(nums2,nums2.size()-1,dp2);
         
         
-         return max(first,second);   
+        dp1[0]=nums1[0];
+        dp2[0]=nums2[0];
+        
+        dp1[1]=max(nums1[0],nums1[1]);
+        dp2[1]=max(nums2[0],nums2[1]);
+        
+        
+        for(int i=2;i<nums1.size();i++){
+            
+            dp1[i]=max(nums1[i]+dp1[i-2],dp1[i-1]);
+            
+            dp2[i]=max(nums2[i]+dp2[i-2],dp2[i-1]);
+            
+        }
+        
+        
+         return max(dp1[nums1.size()-1],dp2[nums2.size()-1]);   
         
     }
 };
