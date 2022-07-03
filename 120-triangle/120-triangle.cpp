@@ -24,36 +24,28 @@ public:
     int minimumTotal(vector<vector<int>>& triangle) {
         
         
-        // return solve(0,0,triangle);
-        int mini=INT_MAX;
-        
+       
         int rows=triangle.size();
-        
-        dp[0][0]=triangle[0][0];
         
         for(int i=1;i<rows;i++){
             
             for(int j=0;j<triangle[i].size();j++){
                 
-                if(j==0 )
-                    dp[i][j]=triangle[i][j]+dp[i-1][j];
-                else if(j==triangle[i].size()-1)
-                        dp[i][j]=triangle[i][j]+dp[i-1][j-1];
-                else {
-                    dp[i][j]=triangle[i][j]+min(dp[i-1][j],dp[i-1][j-1]);
+                if(j==0 )//leftmost row
+                    triangle[i][j]+=triangle[i-1][j];
+                else if(j==triangle[i].size()-1)//last row in particular index
+                        triangle[i][j]+=triangle[i-1][j-1];
+                else { 
+                    triangle[i][j]+=min(triangle[i-1][j],triangle[i-1][j-1]);
                     
                 }
                 
-               
-                
-                // cout<<dp[i][j]<<" ";
             }
-            // cout<<endl;
             
         }
         
         
         
-        return *min_element(dp[rows-1].begin(),dp[rows-1].begin()+triangle[rows-1].size());
+        return *min_element(triangle[rows-1].begin(),triangle[rows-1].end());
     }
 };
