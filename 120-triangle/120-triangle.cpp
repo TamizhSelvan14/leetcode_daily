@@ -1,42 +1,30 @@
 class Solution {
 public:
-    
-    int solve(int i,int j,vector<vector<int>> &triangle,vector<vector<int>> &dp){
+    vector<vector<int>> dp{201,vector<int>(201,-1)};
+    int solve(int i,int j,vector<vector<int>>& triangle){
         
-        if(i<0 or i>=triangle.size())
-            return 0;
+        if(j>triangle[i].size()-1)
+            return 1e9;
         
-        if(j<0 or j>=triangle[i].size())
-            return INT_MAX;
-        
+        if(i==triangle.size()-1)
+            return triangle[i][j];
         
         if(dp[i][j]!=-1)
-            return dp[i][j];
+        return dp[i][j];
         
-        int down=solve(i+1,j,triangle,dp);
-        int rightDiagonal=solve(i+1,j+1,triangle,dp);
+        int down=triangle[i][j] +solve(i+1,j,triangle);
+        int rightDiagonal=triangle[i][j]+solve(i+1,j+1,triangle);
         
+        return dp[i][j]=min(down,rightDiagonal);
         
-        return dp[i][j]=triangle[i][j]+min(down,rightDiagonal);
         
         
     }
     
-    
-    
     int minimumTotal(vector<vector<int>>& triangle) {
         
-        vector<vector<int>> dp=triangle;
         
-        for(int i=0;i<triangle.size();i++)
-            for(int j=0;j<triangle[i].size();j++)
-                dp[i][j]=-1;
-        
-        
-        return solve(0,0,triangle,dp);
-        
-        
-        
+        return solve(0,0,triangle);
         
     }
 };
