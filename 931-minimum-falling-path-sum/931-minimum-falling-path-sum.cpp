@@ -1,29 +1,27 @@
 class Solution {
 public:
-    
-    int solve(int i,int j,vector<vector<int>> &matrix ,vector<vector<int>> &dp){
-        
-        //if i goes out of boundary then return 0 
-        if(i<0 or i>=matrix.size())
-            return 0;
-        
-        //if j goes out of boundary then return the max so we can take minimum
-        if( j<0 or j>=matrix[0].size() )
-            return 1e8;
-        
-        if(dp[i][j]!=-1)
-            return dp[i][j];
+    vector<vector<int>> cache{101,vector<int>(101,-1)};
+    int solve(int i,int j,vector<vector<int>>& matrix){
+        int n=matrix.size();
         
         
-        int down=matrix[i][j]+solve(i+1,j,matrix,dp);
-        int leftDiagonal=matrix[i][j]+solve(i+1,j-1,matrix,dp);
-        int rightDiagonal=matrix[i][j]+solve(i+1,j+1,matrix,dp);
         
-        // cout<<left<<" "<<leftDiagonal<<" "<<rightDiagonal<<endl;
+        if(i>=n or j>=n or j<0 )
+            return 1e9;
+        
+        if(i==n-1)
+            return matrix[i][j];
+        
+        if(cache[i][j]!=-1)
+            return cache[i][j];
         
         
-        return  dp[i][j]=min(min(down,leftDiagonal),rightDiagonal);
+        int down=matrix[i][j]+solve(i+1,j,matrix);
+        int leftAdj=matrix[i][j]+solve(i+1,j-1,matrix);
+        int rightAdj=matrix[i][j]+solve(i+1,j+1,matrix);
         
+        
+        return cache[i][j]=min(down,min(leftAdj,rightAdj));
         
         
     }
@@ -31,20 +29,18 @@ public:
     
     
     int minFallingPathSum(vector<vector<int>>& matrix) {
-        int row=matrix.size();
-        int col=matrix[0].size();
-        
-        //memoize
-        vector<vector<int>> dp(row,vector<int> (col,-1));
+        int n=matrix.size();
         
         int mini=INT_MAX;
-        for(int i=0;i<col;i++){
-            // cout<<matrix[0][i]<<" ";
-           mini=min(mini,solve(0,i,matrix,dp));
+        
+        //traversing the firt col
+        for(int i=0;i<n;i++){
+            
+        mini=min(mini ,solve(0,i,matrix));
+            
         }
         
         
         return mini;
-        
     }
 };
