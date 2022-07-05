@@ -19,21 +19,20 @@ public:
     
     bool canJump(vector<int>& nums) {
         int n=nums.size();
-        vector<int> dp(n,0);       
+       
+        int curr=nums[0];
         
-        dp[0]=true;
-        
-        for(int i = 1; i < n ; i++){
-             for(int j = i-1 ; j >= 0; j--){
-                 if(dp[j] && j+nums[j] >= i){
-                     //if the path is true which means it can be reached
-                     //and it is able to reach our current path
-                     //then our current path is true
-                     dp[i] = true;
-                     break;
-                 }  
-             }          
+        for(int i=1;i<n;i++){
+          
+            if(curr<=0)
+                return false;
+            
+            curr--;
+            
+            curr=max(curr,nums[i]);
+         
         }
-        return dp[n-1];
+    
+    return true;
     }
 };
