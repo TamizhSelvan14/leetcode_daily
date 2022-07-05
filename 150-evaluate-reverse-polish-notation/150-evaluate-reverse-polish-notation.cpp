@@ -15,8 +15,6 @@ public:
                 int first=stoi(st.top());
                 st.pop();
                 
-                // cout<<first<<" "<<second<<endl;
-                
                 int ans=0;
                
                         
@@ -29,15 +27,12 @@ public:
                      else  if(tokens[i]=="/")
                        ans= (first/second);
         
-                string s=to_string(ans);
-                    st.push(s);
-         // cout<<st.top()<<endl;
-            
+                    st.push(to_string(ans));
           }else{
                 st.push(tokens[i]);
           }
           
-         }
+        }
         
         return stoi(st.top());
     }
