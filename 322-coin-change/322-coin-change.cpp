@@ -1,30 +1,63 @@
 class Solution {
 public:
-    int dp[10000 + 1][12 + 1];
+    int solve(int i,vector<int>& coins, int amount,vector<vector<int>>&dp){
     
-    int tabulation(vector<int> wt, int w, int n)
-    {
-        for (int i = 0; i < w + 1; i++)
-            for (int j = 0; j < n + 1; j++)
-                if (i == 0 || j == 0)
-                    dp[i][j] = (i == 0) ? 0 : INT_MAX - 1;
+    if(i<0)
+            return 1e9;
         
-        for (int i = 1; i < w + 1; i++) {
-            for (int j = 1; j < n + 1; j++) {
-                if (wt[j - 1] > i) 
-                    dp[i][j] = 0 + dp[i - 0][j - 1];
-                else 
-                    dp[i][j] = min(0 + dp[i - 0][j - 1], 1 + dp[i - wt[j - 1]][j - 0]);
-            }
+        
+    if(amount==0)
+        return 0;
+        
+    if(i==0){
+        
+            if(amount==coins[i])
+                return 1;
+            else if(coins[i]>amount)
+                return 1e9;
+        
+    }
+        
+        if(dp[i][amount]!=-1)
+            return dp[i][amount];
+        
+        
+    int ans=-1;
+        
+        if(coins[i]>amount){
+            
+        int dontPick=solve(i-1,coins,amount,dp);
+            
+           ans=dontPick; 
+        }else if(coins[i]<=amount){
+            
+            //if possible means we have 2 options either we need to skip or we need to pick
+            
+            int dont=solve(i-1,coins,amount,dp);
+            int pick=1+solve(i,coins,amount-coins[i],dp);
+            
+            ans=min(pick,dont);
+            
+            
         }
         
-        return dp[w][n];
+        
+    return dp[i][amount]=ans;
+    
+    
     }
     
-    int coinChange(vector<int>& coins, int amount) 
-    {
-        memset(dp, -1, sizeof(dp));
-        int minCoins = tabulation(coins, amount, coins.size());
-        return minCoins == INT_MAX - 1 ? -1 : minCoins;    
+    
+    
+    
+    int coinChange(vector<int>& coins, int amount) {
+        
+        int n=coins.size();
+        vector<vector<int>> dp(n,vector<int>(amount+1,-1));
+        
+       int ans= solve(n-1,coins,amount,dp);
+        
+        return (ans==1e9) ? -1 :ans;
+        
     }
 };
