@@ -1,66 +1,57 @@
 class Solution {
 public:
     
-    string combinations(char digit){
-        
-        
-        if(digit=='2')
-            return "abc";
-        else if(digit=='3')
-            return "def";
-        
-        else if(digit=='4')
-            return "ghi";
-        else if(digit=='5')
-            return "jkl";
-        else if(digit=='6')
-            return "mno";
-        else if(digit=='7')
-            return "pqrs";
-        else if(digit=='8')
-            return "tuv";
-        else if(digit=='9')
-            return "wxyz";
-        
-        
-        
-      return "";  
-    }
     
-  
-    void findComb(vector<string> &ans,string &s,string digits,int index){
+    void solve(string digits,unordered_map<int,string> umap, vector<string> &ans,string temp,int index){
         
-        if(digits.size()==index){
-            ans.push_back(s);
+        
+        if(index==digits.size()){
+            ans.push_back(temp);
+            
             return;
         }
         
-        for(auto x:combinations(digits[index])){
-            
-            s.push_back(x);
-            
-            findComb(ans,s,digits,index+1);
-            
-            s.pop_back();
+        
+        
+        for(auto c:umap[digits[index]-'0'])
+        {
+            temp.push_back(c);
+            solve(digits,umap,ans,temp,index+1);
+            temp.pop_back();
             
         }
+        
+        
+        
         
     }
     
     
+    
+    
     vector<string> letterCombinations(string digits) {
-       //iterative way in notes side bar
+        
         
         if(digits.size()==0)
             return {};
         
-        vector<string>ans;
-        string s="";
-        // int n=digits.size();
-        findComb(ans,s,digits,0);
+        unordered_map<int,string> umap;
         
+        umap[2]="abc";
+        umap[3]="def";
+        umap[4]="ghi";
+        umap[5]="jkl";
+        umap[6]="mno";
+        umap[7]="pqrs";
+        umap[8]="tuv";
+        umap[9]="wxyz";
+        
+        vector<string> ans;
+        solve(digits,umap,ans,"",0);
         
         return ans;
+        
+        
         
     }
 };
