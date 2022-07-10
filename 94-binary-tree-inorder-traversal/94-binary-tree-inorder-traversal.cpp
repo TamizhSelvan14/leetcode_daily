@@ -15,11 +15,38 @@ public:
         if(root==NULL)
             return;
         
-        solve(root->left,ans);
-        ans.push_back(root->val);
-        solve(root->right,ans);
+        
+        
+        stack<TreeNode*> st;
+        st.push(root);
+        TreeNode *node=st.top();
+        
+        st.pop();
+        
+        
+        while(true){
+            
+            
+            
+            if(node!=NULL){
+                st.push(node);
+                node=node->left;
+            }else{
+                
+                if(st.empty())
+                    break;
+                
+                node=st.top();
+                st.pop();
+                ans.push_back(node->val);
+                node=node->right;
+                
+                
+            }
+        }
+        
+        
     }
-    
     
     
     vector<int> inorderTraversal(TreeNode* root) {
