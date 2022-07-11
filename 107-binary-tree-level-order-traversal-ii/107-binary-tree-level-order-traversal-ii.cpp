@@ -56,16 +56,38 @@ public:
        
     }
     
+    int height(TreeNode *root){
+        
+        if(root==NULL)
+            return 0;
+        
+        
+        return max(height(root->left),height(root->right))+1;
+        
+    }
+   
     
-    
-    
+   void inordertraversal(TreeNode *root,vector<vector<int>> &ans,int level){
+       
+       if(root==NULL) return;
+       
+       ans[level].push_back(root->val);
+       inordertraversal(root->left,ans,level-1);
+       
+       inordertraversal(root->right,ans,level-1);
+       
+   }
     
     
     vector<vector<int>> levelOrderBottom(TreeNode* root) {
-        vector<vector<int>> ans;
-        solve(ans,root);
+       
+       int n =height(root);
         
-        reverse(ans.begin(),ans.end());
+        vector<vector<int>> ans(n,vector<int>{});
+        // solve(ans,root);
+        inordertraversal(root,ans,n-1);
+        
+        // reverse(ans.begin(),ans.end());
         return ans;
     }
 };
