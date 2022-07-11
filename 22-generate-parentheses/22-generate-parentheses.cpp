@@ -6,16 +6,17 @@ public:
         
         if(i==0 and j==0){
             ans.push_back(s);
-            return;
+            return ;
         }
         
         
-        if(i>0){
-            solve(i-1,j,ans,s+"(");
-        }
-        if(j>i){
+        
+        if(i>0)
+            solve(i-1,j,ans,s+'(');
+        
+        //base case 2
+        if(j>i)
             solve(i,j-1,ans,s+")");
-        }
         
         
         
@@ -25,14 +26,13 @@ public:
     
     
     
+    
     vector<string> generateParenthesis(int n) {
-        
         vector<string> ans;
-        
         
         solve(n,n,ans,"");
         
-        return ans;
         
+        return ans;
     }
 };
