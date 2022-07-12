@@ -1,7 +1,7 @@
 class Solution {
 public:
     
-    void solve(vector<int> nums,vector<vector<int>> &ans,int index){
+    void solve(vector<int> &nums,vector<vector<int>> &ans,int index){
         
         
         if(index==nums.size()){
@@ -24,8 +24,6 @@ public:
             solve(nums,ans,index+1);
             
             swap(nums[i],nums[index]);
-            // swap(nums[i],nums[index]);
-            
             
         }
         
