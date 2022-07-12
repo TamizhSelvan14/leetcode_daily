@@ -4,22 +4,26 @@ public:
     void solve(vector<int> nums,vector<vector<int>> &ans,int index){
         
         
-        if(index==nums.size()-1){
+        if(index==nums.size()){
             ans.push_back(nums);
             return;
         }
         
         
+        unordered_set<int> st;
+        
         for(int i=index;i<nums.size();i++){
             
             
-            if(nums[index]==nums[i] and i!=index)
-                continue;
+          if(st.find(nums[i])!=st.end())
+              continue;
 
-             swap(nums[i],nums[index]);
+            st.insert(nums[i]);
+            swap(nums[i],nums[index]);
             
             solve(nums,ans,index+1);
             
+            swap(nums[i],nums[index]);
             // swap(nums[i],nums[index]);
             
             
@@ -41,10 +45,6 @@ public:
         
         
         return ans;
-        
-        
-        
-        
         
     }
 };
