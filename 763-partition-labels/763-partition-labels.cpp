@@ -16,8 +16,8 @@ public:
         
         int start=0;
         int end=umap[s[0]];
-        int i=0;
-        while(start<s.size() and end<s.size()){
+       
+        for(int i=0;i<s.size();i++){
             
             
             if(umap[s[i]]>end)
@@ -32,9 +32,6 @@ public:
                 end=umap[s[i+1]];
                 
             }
-            
-            
-            i++;
             
         }
         
