@@ -5,35 +5,31 @@ public:
         if(hand.size()%groupSize!=0)
             return false;
         
-        sort(hand.begin(),hand.end());
         
-        
-        unordered_map<int,int> umap;
+        map<int,int> umap;
         
         for(int i=0;i<hand.size();i++){
             umap[hand[i]]++;
         }
        
-        for(auto x:hand){
+        while(!umap.empty()){
             
-            if(umap[x]==0)
-                continue;
+            int curr=umap.begin()->first;
             
             for(int i=0;i<groupSize;i++){
                 
-                if(umap[x+i]==0)
+                if(umap[curr+i]==0)
                     return false;
-                else
-                    umap[x+i]--;
+                
+                
+                    umap[curr+i]--;
+                
+                if(umap[curr+i]<1)
+                    umap.erase(curr+i);
                 
             }
             
         }
-                
-          
-       
-        
-        
         return true;
     }
 };
