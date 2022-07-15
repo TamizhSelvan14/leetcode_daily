@@ -1,41 +1,43 @@
 class Solution {
 public:
     vector<int> partitionLabels(string s) {
+        
         vector<int> ans;
+       
         
+        unordered_map<int,int> umap;
         
-        unordered_map<char,int> umap;
-        
-       for(int i=0;i<s.size();i++){
-           umap[s[i]]=i;
-       }
-        
-        
-        int first=0,last=umap[s[0]];
-        int i=0;
-        while(i<=s.size()-1){
+        for(int i=0;i<s.size();i++){
             
             
-            if(umap[s[i]] >last and i<last){
-                last=umap[s[i]];
-                
-            }else if(umap[s[i]] >last and i>last) {
-                ans.push_back((last-first)+1);
-                first=i;
-                last=umap[s[i]];
-            }
-             if(i==s.size()-1){
-                ans.push_back((last-first)+1);
-            }
-        
-            i++;
-            
-           
-            
+            umap[s[i]]=i;
             
         }
-        // cout<<i<<endl;
-//         
+        
+        int start=0;
+        int end=umap[s[0]];
+        int i=0;
+        while(start<s.size() and end<s.size()){
+            
+            
+            if(umap[s[i]]>end)
+            {
+                end=umap[s[i]];
+            }
+            
+            if(i==end){
+                
+                ans.push_back(end-start+1);
+                start=i+1;
+                end=umap[s[i+1]];
+                
+            }
+            
+            
+            i++;
+            
+        }
+        
         
         
         return ans;
