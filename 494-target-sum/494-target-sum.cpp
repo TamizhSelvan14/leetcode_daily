@@ -9,8 +9,8 @@ public:
         
         if(i==0){
             
-            // if(target==0 and  (  nums[i]*(-1)==0 or nums[i]*(+1)==0  ) )
-            //    return 1;
+            if(target==0 and  (  nums[i]*(-1)==0 or nums[i]*(+1)==0  ) )
+               return 1;
             
             if(((nums[i]*(-1))) ==target){
                 return 1;
@@ -25,8 +25,8 @@ public:
         }
         
         
-    // if(dp[i][curr]!=-1)
-        // return dp[i][curr];
+    // if(dp[i][target]!=-1)
+    //     return dp[i][target];
         
         int negative=solve(nums,i-1,target + (nums[i] * (-1)) , dp );
         int positive=solve(nums,i-1,target + (nums[i] * (+1)) ,  dp );
