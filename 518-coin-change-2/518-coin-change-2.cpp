@@ -41,9 +41,52 @@ public:
     
     
     int change(int amount, vector<int>& coins) {
-vector<vector<int>> dp(coins.size(),vector<int>(amount+1,-1));
+vector<vector<int>> dp(coins.size(),vector<int>(amount+1,0));
         
-    return    solve(coins,amount,coins.size()-1,dp);
+        
+        
+        for(int i=0;i<amount+1;i++){
+            if(i%coins[0]==0 )
+            dp[0][i]=1;
+        }
+        
+        
+        
+        for(int i=1;i<coins.size();i++){
+            for(int j=0;j<amount+1;j++){
+                
+                
+                    
+                      int  dont=dp[i-1][j];
+                
+                int pick=0;
+                if(coins[i]<=j){
+                 pick=dp[i][j-coins[i]];
+                }
+            
+                
+
+                     dp[i][j]=dont+pick;;
+                
+                
+            }
+        }
+       
+        
+        
+        return dp[coins.size()-1][amount];
+        
+    // int ans=    solve(coins,amount,coins.size()-1,dpa);
+        
+         
+//         for(int i=0;i<coins.size();i++){
+//             for(int j=0;j<amount+1;j++){
+//                 cout<<dpa[i][j]<<" ";
+//             }
+//             cout<<endl;
+//         }
+        
+//         return ans;
         
     }
 };
