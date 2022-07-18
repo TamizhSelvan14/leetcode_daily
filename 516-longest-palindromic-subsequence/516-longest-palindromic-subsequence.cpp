@@ -1,45 +1,44 @@
 class Solution {
 public:
-    
-    //similiar to longest common subsequence just reverse the string and add to the string 2
-    
-    
-    int find(int i,int j,string &a,string &b,vector<vector<int>> &dp){
-    
-    if(i<=0 || j<=0)
-        return 0;
+    int longestPalindromeSubseq(string s) {
         
-    if(dp[i][j]!=-1)
-        return dp[i][j];
-
-        if(a[i-1]==b[j-1]){
-
-            return dp[i][j]=find(i-1,j-1,a,b,dp)+1;
-
-        }else{
-         
-            return dp[i][j]=max(find(i-1,j,a,b,dp),find(i,j-1,a,b,dp));
+        string t=s;
+        int n=t.size();
+        reverse(t.begin(),t.end());
         
+        vector<vector<int>> dp(1001,vector<int>(1001,0));
+        
+        for(int i=0;i<=n;i++){
+          
+            dp[i][0]=0;
         }
         
         
+        for(int i=0;i<=n;i++){
+            dp[0][i]=0;
+           
+        }
         
-    }
-    
-    
-    int longestPalindromeSubseq(string s) {
-    
-        int n=s.size();
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=n;j++){
+                
+                if(s[i-1]==t[j-1]){
+                     dp[i][j]=1+dp[i-1][j-1];
+                }else{
+                    
+                     dp[i][j]=max(dp[i-1][j],dp[i][j-1]);
+                    
+                    
+                }
+                
+                
+                
+            }
+        }
         
-        string w=s;
         
-        reverse(w.begin(),w.end());
+        return dp[n][n];
         
-        vector<vector<int>> dp(1001,vector<int>(1001,-1));
-        
-       return find(n,n,s,w,dp);
-        
-     
-        
+
     }
 };
