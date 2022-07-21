@@ -24,13 +24,25 @@ public:
         
         int n=s.size();
         int m=t.size();
-        vector<vector<int>> dp(n+1,vector<int>(m+1,-1));
+//         vector<vector<int>> dp(n+1,vector<int>(m+1,-1));
         
-        // memset(dp,-1,sizeof(dp));
-        int len=solve(n,m,s,t,dp);
+//         // memset(dp,-1,sizeof(dp));
+//         int len=solve(n,m,s,t,dp);
+        
+        int i=0;int j=0;
+        
+        while(i<m){
+            
+            if(s[j]==t[i])
+                j++;
+            
+            i++;
+        }
         
         
-        return (len==n);
+        
+        
+        return (j==n);
         
     }
 };
