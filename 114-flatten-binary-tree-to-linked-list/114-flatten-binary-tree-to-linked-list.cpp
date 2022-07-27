@@ -12,24 +12,35 @@
 class Solution {
 public:
     
-    //extra Node to merge
+    //MORRIS TRAVERSAL
     
-    TreeNode *prev=NULL;
     
     void flatten(TreeNode* root) {
-        if(root==nullptr)
+    
+        if(root==NULL)
             return;
         
-        //the approach is when we reach the last node fro there we gonna make the tree
+        TreeNode *curr=root;
+        TreeNode *prev=NULL;
         
-        flatten(root->right);
-        flatten(root->left);
-        
-        
-        root->right=prev;
-        root->left=NULL;
-        
-        prev=root;
-        
+        while(curr!=NULL){
+            
+            if(curr->left!=NULL)
+            {
+                prev=curr->left;
+                
+                //move prev to left tree right most last
+                while(prev->right!=NULL){
+                    prev=prev->right;
+                }
+                
+                prev->right=curr->right;
+                curr->right=curr->left;
+                curr->left=NULL;
+                
+            }
+            curr=curr->right;
+            
+        }
     }
 };
