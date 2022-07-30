@@ -1,59 +1,60 @@
 class Solution {
 public:
-    bool checkLimits(int i,int j,int row,int column){
+    int dp[2001][2001];
+    int solve(int i,int j,vector<vector<int>> &matrix,int prev){
+       
+        if(i<0 or  i>=matrix.size() or j<0  or j>=matrix[0].size())
+            return 0;
         
-        if(i>=0 and i<row and j>=0 and j<column)
-            return true;
-        else
-            return false;
+        if(prev>=matrix[i][j])
+            return 0;
+        
+        if(dp[i][j]!=-1)
+            return dp[i][j];
         
         
-    }
-    int func(vector<vector<int>> &matrix, vector<vector<int>> &dp, int i, int j, int n, int m){
+        int down=1+solve(i+1,j,matrix,matrix[i][j]);
+       
+        int right=1+solve(i,j+1,matrix,matrix[i][j]);
         
-        if(!checkLimits(i, j, n, m)) return 0;
+        int top=1+solve(i-1,j,matrix,matrix[i][j]);
         
-        if(dp[i][j]!=-1) return dp[i][j];
         
-        int c1 = 0, c2 = 0, c3 = 0, c4 =0;
+        int left=1+solve(i,j-1,matrix,matrix[i][j]);
         
-        if(checkLimits(i+1, j, n, m) and matrix[i+1][j]>matrix[i][j]){
-            c1 = func(matrix, dp, i+1, j, n, m);
-        }
         
-        if(checkLimits(i-1, j, n, m) and matrix[i-1][j]>matrix[i][j]){
-            c2 = func(matrix, dp, i-1, j, n, m);
-        }
+       
         
-        if(checkLimits(i, j+1, n, m) and matrix[i][j+1]>matrix[i][j]){
-            c3 = func(matrix, dp, i, j+1, n, m);
-        }
         
-        if(checkLimits(i, j-1, n, m) and matrix[i][j-1]>matrix[i][j]){
-            c4 = func(matrix, dp, i, j-1, n, m);
-        }
-        
-        dp[i][j] = 1 + max(c1, max(c2, max(c3, c4)));
-        
-        return dp[i][j];        
+        return dp[i][j]=max({left,top,down,right});
         
     }
     
+    
+    
     int longestIncreasingPath(vector<vector<int>>& matrix) {
+        int m=matrix.size();
+        int n=matrix[0].size();
         
-        int n = matrix.size(), m = matrix[0].size();
-        int ans = 1;
-        vector<vector<int>> dp(n, vector<int> (m, -1));
+        memset(dp,-1,sizeof(dp));
         
-        for(int i = 0; i<n;i++){
-            for(int j=0;j<m;j++){
-                if(dp[i][j]==-1){
-                    ans = max(ans, func(matrix, dp, i, j, n, m));
-                }
+        int maxi=INT_MIN;
+        
+        for(int i=0;i<m;i++){
+            
+            for(int j=0;j<n;j++){
+                
+                int ans=0;
+                
+                ans=solve(i,j,matrix,-1);
+            
+                maxi=max(maxi,ans);
+                
             }
+            
         }
-        return ans;
         
+        return maxi;
         
     }
 };
