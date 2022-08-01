@@ -23,6 +23,42 @@ public:
     }
     
     
+    void BFS( int i, int j,vector<vector<char>>& board ) {
+       
+        int rows=board.size();
+        int cols=board[0].size();
+        
+        if(board[i][j]!='O') return;
+        else board[i][j] = '#';
+        
+        queue<pair<int, int>> myQueue;
+        myQueue.push(make_pair(i, j));
+        
+        while(!myQueue.empty()) {
+            int x = myQueue.front().first;
+            int y = myQueue.front().second;
+            myQueue.pop();
+            
+            if(x+1<rows && board[x+1][y]=='O') {
+                myQueue.push(make_pair(x+1, y));
+                board[x+1][y] = '#';
+            }
+            if(x-1>0 && board[x-1][y]=='O') {
+                myQueue.push(make_pair(x-1, y));
+                board[x-1][y] = '#';
+            }
+            if(y+1<cols && board[x][y+1]=='O') {
+                myQueue.push(make_pair(x, y+1));
+                board[x][y+1] = '#';
+            }
+            if(y-1>0 && board[x][y-1]=='O') {
+                myQueue.push(make_pair(x, y-1));
+                board[x][y-1] = '#';
+            }
+        }
+    
+    }
+    
     
     void solve(vector<vector<char>>& board) {
         int rows=board.size(); 
@@ -38,13 +74,13 @@ public:
             
              //first row 
                 if(board[i][0]=='O'){
-                    solve(i,0,board);
+                    BFS(i,0,board);
                 }
             
             //last row
             
                 if(board[i][cols-1]=='O'){
-                    solve(i,cols-1,board);
+                    BFS(i,cols-1,board);
                 }
             
         }
@@ -53,13 +89,13 @@ public:
             
              //top col
                 if(board[0][i]=='O'){
-                    solve(0,i,board);
+                    BFS(0,i,board);
                 }
             
             //last col
             
                 if(board[rows-1][i]=='O'){
-                    solve(rows-1,i,board);
+                    BFS(rows-1,i,board);
                 }
             
         }
