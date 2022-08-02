@@ -20,6 +20,39 @@ public:
     }
     
     
+    void bfs(vector<vector<char>> &grid,int i,int j){
+        
+        queue<pair<int,int>> q;
+        q.push({i,j});
+        
+        
+        while(!q.empty()){
+            
+            int a=q.front().first;
+            int b=q.front().second;
+            
+            
+            q.pop();
+            
+            if(a<0 or b<0 or a>=grid.size() or b>=grid[0].size() or grid[a][b]=='0'){
+                continue;
+            }
+            
+            //directions
+                grid[a][b]='0';   
+                q.push({a+1,b});
+            
+                q.push({a-1,b});
+            
+                q.push({a,b+1});
+                
+                q.push({a,b-1});
+                
+        }
+        
+    }
+    
+    
     
     int numIslands(vector<vector<char>>& grid) {
         
@@ -31,7 +64,7 @@ public:
                 
                 if(grid[i][j]=='1'){
                     
-                    dfs(grid,i,j);
+                    bfs(grid,i,j);
                     ans++;
                    
                 }
