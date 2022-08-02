@@ -13,6 +13,8 @@ public:
         
         grid[i][j]=1;
         
+        
+        //check akll side it is returing true if not it is touching boundary
         bool a=solve(i+1,j,grid,rows,cols);
         
           bool b=solve(i,j+1,grid,rows,cols);
