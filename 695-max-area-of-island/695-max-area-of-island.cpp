@@ -1,8 +1,8 @@
 class Solution {
 public:
-    int ans=0;
     
-    void dfs(int i,int j,int rows,int cols,vector<vector<int>>& grid){
+    
+    void dfs(int i,int j,int rows,int cols,vector<vector<int>>& grid,int &ans){
         
         if(i<0 or j<0 or i>=rows or j>=cols or grid[i][j]==0)
             return ;
@@ -16,13 +16,13 @@ public:
         grid[i][j]=0;
         ans++;
         
-      dfs(i+1,j,rows,cols,grid);
+      dfs(i+1,j,rows,cols,grid,ans);
         
-       dfs(i,j+1,rows,cols,grid);
+       dfs(i,j+1,rows,cols,grid,ans);
         
-       dfs(i-1,j,rows,cols,grid);
+       dfs(i-1,j,rows,cols,grid,ans);
         
-        dfs(i,j-1,rows,cols,grid);
+        dfs(i,j-1,rows,cols,grid,ans);
         
     }
         
@@ -69,13 +69,13 @@ public:
         int cols=grid[0].size();
         
         int maxi=INT_MIN;
-         // int ans=0;
+         int ans=0;
         for(int i=0;i<rows;i++){
             for(int j=0;j<cols;j++){
                 
                 if(grid[i][j]==1){
                    
-                    dfs(i,j,rows,cols,grid);
+                    dfs(i,j,rows,cols,grid,ans);
                     
                 }
                 maxi=max(maxi,ans);
