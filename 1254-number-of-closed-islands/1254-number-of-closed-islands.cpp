@@ -50,6 +50,39 @@ public:
     }
     
     
+    void bfs(int i,int j,vector<vector<int>>& grid){
+        
+        queue<pair<int,int>> q;
+        
+        q.push({i,j});
+        
+        
+        while(!q.empty()){
+            
+            int a=q.front().first;
+            int b=q.front().second;
+            
+            q.pop();
+            
+            if(a<0 or b<0 or a>=grid.size() or b>=grid[0].size() or grid[a][b]==1){
+                    continue;
+             }
+            
+            grid[a][b]=1;
+            
+            q.push({a+1,b});
+            
+            q.push({a,b+1});
+            
+            q.push({a-1,b});
+            
+            q.push({a,b-1});
+            
+        }
+        
+        
+    }
+    
     
     
     int closedIsland(vector<vector<int>>& grid) {
@@ -64,10 +97,10 @@ public:
         for(int i=0;i<rows;i++){
             
             if(grid[i][0]==0)
-                dfs(i,0,grid);
+                bfs(i,0,grid);
             
             if(grid[i][cols-1]==0)
-                dfs(i,cols-1,grid);
+                bfs(i,cols-1,grid);
                 
                 
         }
@@ -77,10 +110,10 @@ public:
         for(int i=0;i<cols;i++){
             
             if(grid[0][i]==0)
-                dfs(0,i,grid);
+                bfs(0,i,grid);
             
             if(grid[rows-1][i]==0)
-                dfs(rows-1,i,grid);
+                bfs(rows-1,i,grid);
                 
         }
         
@@ -93,7 +126,7 @@ public:
                     
 //                     if(solve(i,j,grid,rows,cols))
 //                         ans++;
-                    dfs(i,j,grid);
+                    bfs(i,j,grid);
                     ans++;
                     
                 }    
