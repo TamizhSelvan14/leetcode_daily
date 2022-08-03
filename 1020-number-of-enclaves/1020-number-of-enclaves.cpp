@@ -19,6 +19,43 @@ public:
     }
     
     
+    void bfs(vector<vector<int>>  &grid,int i,int j){
+        queue<pair<int,int>> q;
+        
+        q.push({i,j});
+        
+        
+        while(!q.empty()){
+            
+            int a=q.front().first;
+            int b=q.front().second;
+            q.pop();
+            
+            if(a<0 || b<0 || a>=grid.size() || b>=grid[0].size() or grid[a][b]==0){
+            continue ;
+         }
+        
+            grid[a][b]=0;
+            
+            q.push({a+1,b});
+            
+            q.push({a,b+1});
+            
+            q.push({a-1,b});
+            
+            q.push({a,b-1});
+            
+            
+            
+        }
+        
+        
+        
+    }
+        
+    
+    
+    
     
     int numEnclaves(vector<vector<int>>& grid) {
        
@@ -33,11 +70,11 @@ public:
             
             //first row
             if(grid[i][0]==1)
-                dfs(grid,i,0);
+                bfs(grid,i,0);
             
             //last row
             if(grid[i][col-1]==1)
-                dfs(grid,i,col-1);
+                bfs(grid,i,col-1);
             
             
         }
@@ -49,11 +86,11 @@ public:
             
             //first col
             if(grid[0][i]==1)
-                dfs(grid,0,i);
+                bfs(grid,0,i);
             
             //last col
             if(grid[row-1][i]==1)
-                dfs(grid,row-1,i);
+                bfs(grid,row-1,i);
             
             
         }
