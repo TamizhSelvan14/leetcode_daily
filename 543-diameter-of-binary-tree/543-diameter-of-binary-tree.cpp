@@ -25,19 +25,37 @@ public:
         return max(left,right)+1;
         
     }
+   int optimized(TreeNode *root,int &ans){
+       
+       if(root==NULL)
+           return 0;
+       
+       int left=optimized(root->left,ans);
+       int right=optimized(root->right,ans);
+       
+       ans=max(ans,(left+right));
+       
+       
+       return max(left,right)+1;
+       
+   }
     
-    int maxi=0;
+    
     int diameterOfBinaryTree(TreeNode* root) {
         if(root==NULL)
             return 0;
+     
+        int maxi=0;
+        optimized(root,maxi);
         
-        int left=height(root->left);
-        int right=height(root->right);
         
-        maxi=max(maxi,(left+right));
+//         int left=diameterOfBinaryTree(root->left);
+//         int right=diameterOfBinaryTree(root->right);
         
-        diameterOfBinaryTree(root->left);
-        diameterOfBinaryTree(root->right);
+//         maxi=max(maxi,(left+right));
+        
+//         diameterOfBinaryTree(root->left);
+//         diameterOfBinaryTree(root->right);
         
         
         return maxi;
