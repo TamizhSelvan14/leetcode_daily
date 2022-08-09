@@ -65,7 +65,57 @@ public:
         
     }
     
-    
+    int dp(vector<vector<int>>& grid){
+        
+        int row=grid.size();
+        int col=grid[0].size();
+        
+        
+        
+        for(int i=0;i<row;i++){
+            for(int j=0;j<col;j++){
+                if(grid[i][j]==1)
+                    continue;
+                
+                grid[i][j]=201;
+                
+                //top
+                if(i>0)
+                    grid[i][j]=min(grid[i][j],grid[i-1][j]+1);
+                
+                //left
+                if(j>0)
+                    grid[i][j]=min(grid[i][j],grid[i][j-1]+1);
+                
+                
+            }
+        }
+        
+        
+        int ans=0;
+        
+        for(int i=row-1;i>=0;i--){
+            for(int j=col-1;j>=0;j--){
+                
+                if(grid[i][j]==1)
+                    continue;
+                
+                if(i<row-1)
+                    grid[i][j]=min(grid[i][j],grid[i+1][j]+1);
+                
+                if(j<col-1)
+                    grid[i][j]=min(grid[i][j],grid[i][j+1]+1);
+                
+                
+                ans=max(ans,grid[i][j]);
+                
+            }
+        }
+        
+          return ans == 201 ? -1 : ans - 1;;
+        
+        
+    }
     
     
     int maxDistance(vector<vector<int>>& grid) {
@@ -75,26 +125,25 @@ public:
         int col=grid[0].size();
      
         
-        queue<pair<int,int>>q;
-        vector<vector<bool>> visited(row,vector<bool>(col,false));
+//         queue<pair<int,int>>q;
+//         vector<vector<bool>> visited(row,vector<bool>(col,false));
         
-        for(int i=0;i<row;i++){
-            for(int j=0;j<col;j++){
+//         for(int i=0;i<row;i++){
+//             for(int j=0;j<col;j++){
                 
-                if(grid[i][j]==1){
+//                 if(grid[i][j]==1){
                   
-                    q.push({i,j});
-                    visited[i][j]=true;
+//                     q.push({i,j});
+//                     visited[i][j]=true;
                     
-                }
+//                 }
                 
                 
-            }
-        }
+//             }
+//         }
         
         
-       return bfs(grid,visited,q);
-        
-       
+       // return bfs(grid,visited,q);
+        return dp(grid);       
     }
 };
