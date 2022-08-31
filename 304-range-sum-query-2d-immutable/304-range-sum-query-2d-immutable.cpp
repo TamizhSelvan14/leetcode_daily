@@ -1,41 +1,67 @@
 class NumMatrix {
 public:
     
-    vector<vector<int>> dp;
+    vector<vector<int>> prefixsum;
+    
     NumMatrix(vector<vector<int>>& matrix) {
         int n=matrix.size();
         int m=matrix[0].size();
         
-        //creting a dp greater than matrix to store 0 s in first row and col
-        dp=vector<vector<int>>(n+1,vector<int>(m+1,0));
+        prefixsum.resize(n+1,vector<int>(m+1,0));
+        
+        int temp=0;
+        for(int i=0;i<m;i++){
+            temp+=matrix[0][i];
+            prefixsum[1][i+1]=temp;
+        }
+        temp=0;
+        for(int i=0;i<n;i++){
+            temp+=matrix[i][0];
+            prefixsum[i+1][1]=temp;
+        }
         
         
-        for(int i=1;i<=n;i++){
-            for(int j=1;j<=m;j++){
+        for(int i=2;i<=n;i++){
+            for(int j=2;j<=m;j++){
+                 // cout<<prefixsum[i-1][j]+prefixsum[i][j-1]<<" ";
+                prefixsum[i][j]=((prefixsum[i-1][j]+prefixsum[i][j-1])-prefixsum[i-1][j-1]) + matrix[i-1][j-1];
                 
-                //this formula gives the size of the rectangle from (0,0) => dp[i][j]
-                dp[i][j]=dp[i-1][j]+dp[i][j-1]+matrix[i-1][j-1]-dp[i-1][j-1];
+                
                 
             }
+            // cout<<endl;
         }
+        
+        
+        
+         
+//         for(int i=0;i<=n;i++){
+//             for(int j=0;j<=m;j++){
+                
+//                 cout<<prefixsum[i][j]<<" ";
+                
+//             }
+//             cout<<endl;
+//         }
+       
         
     }
     
-    
-    //see notes from june 3rd in daily leetcode challenge
-    
     int sumRegion(int row1, int col1, int row2, int col2) {
-
-        //increasing the row col size beacuse the dp is greater size
-        row1++;
-        col1++;
-        row2++;
-        col2++;
         
-        //this formula gives the exact size in the given row and col
-      int sum=dp[row2][col2]-dp[row1-1][col2]-dp[row2][col1-1]+dp[row1-1][col1-1];  
         
-        return sum;
+        int ans=0;
+        
+        int r1=row1+1;
+        int c1=col1+1;
+        int r2=row2+1;
+        int c2=col2+1;
+        
+        
+        ans=prefixsum[r2][c2] - (prefixsum[r1-1][c2]+prefixsum[r2][c1-1]  -prefixsum[r1-1][c1-1]);
+        
+    
+        return ans;
     }
 };
 
