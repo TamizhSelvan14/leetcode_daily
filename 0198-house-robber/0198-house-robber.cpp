@@ -22,7 +22,44 @@ public:
     
     
     int rob(vector<int>& nums) {
-        vector<int> dp(nums.size(),-1);
-        return solve(nums,0,dp);
+        // vector<int> dp(nums.size(),-1);
+        
+        
+        
+        
+        // return solve(nums,0,dp);
+        
+        
+        //tabulation
+        
+        if(nums.size()<=2){
+        
+            if (nums.size()==1){
+                return nums[0];
+            }else{
+                return max(nums[0],nums[1]);
+            }
+        }
+        
+        
+         vector<int> dp(nums.size(),0);
+        
+        dp[0]=nums[0];
+
+        for(int i=1;i<nums.size();i++){
+            int pick=nums[i];
+                
+                if(i>1)
+                pick+=dp[i-2];
+            
+            int skip=dp[i-1];
+        
+        
+                dp[i]=max(pick,skip);
+            cout<<dp[i]<<endl;
+        }
+        
+        return dp[nums.size()-1];
+        
     }
 };
