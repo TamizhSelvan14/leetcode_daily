@@ -11,8 +11,8 @@ public:
         return true;
     }
     
-    int countSubstrings(string s) {
-        t=s;
+    int solve(string s){
+          t=s;
         int count=0;
         for(int i=0;i<s.size();i++){
             for(int j=i;j<s.size();j++){
@@ -29,5 +29,45 @@ public:
         
         
         return count;
+    }
+    
+    int countSubstrings(string s) {
+      // return solve(s);
+    
+        int count=0;
+        
+        
+        for(int k=0;k<s.size();k++){
+            int i=k;
+            int j=k;
+            
+            //odd
+            
+            while(i>=0 and j<s.size() and s[i]==s[j]){
+                count++;
+                i--;
+                j++;
+            }
+            
+            i=k;
+            j=k+1;
+            //even
+            
+            while(i>=0 and j<s.size() and s[i]==s[j]){
+                count++;
+                i--;
+                j++;
+            }
+            
+            
+            
+        }
+        
+        
+        
+        return count;
+        
+        
+        
     }
 };
