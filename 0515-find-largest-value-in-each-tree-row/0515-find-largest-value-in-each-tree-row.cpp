@@ -53,12 +53,33 @@ public:
     }
     
     
+    void dfs(TreeNode * root,vector<int> &ans,int level){
+        
+        
+        if(root==NULL)
+            return;
+        
+        if(ans.size()==level){
+            ans.push_back(root->val);
+        }else{
+            
+            ans[level]=max(ans[level],root->val);
+            
+        }
+        
+        dfs(root->left,ans,level+1);
+        dfs(root->right,ans,level+1);
+        
+        
+    }
+    
     
     vector<int> largestValues(TreeNode* root) {
         
         vector<int> ans;
         
-        bfs(root,ans);
+        // bfs(root,ans);
+        dfs(root,ans,0);
         
         return ans;
         
