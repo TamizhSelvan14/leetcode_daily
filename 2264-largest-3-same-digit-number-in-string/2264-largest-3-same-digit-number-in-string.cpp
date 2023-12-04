@@ -8,19 +8,22 @@ public:
         for(int i=0;i<=num.size()-3;i++){
             
             if(num[i]==num[i+1] && num[i+1] ==num[i+2]){
-                maxi=max(maxi,stoi(num.substr(i,3)));
+                maxi=max(maxi,num[i]-'0');
             }
             
             
         }
         
-        string s=to_string(maxi);
-        
-        if(maxi==INT_MIN)
+          if(maxi==INT_MIN)
             return "";
         
+         string s=to_string(maxi);
+
+        
+      
         
         
-        return s== "0" ? "000" : s;
+        
+        return s+s+s;
     }
 };
