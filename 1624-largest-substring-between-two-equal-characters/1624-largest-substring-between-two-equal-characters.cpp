@@ -14,12 +14,16 @@ public:
                 umap[s[i]].second=i;
 
             }
+            
+        maxi=max(maxi,umap[s[i]].second - umap[s[i]].first);
+
+            
         }
         
-          for(auto x:umap){
+//           for(auto x:umap){
             
-            maxi=max(maxi,x.second.second-x.second.first);
-        }
+//             maxi=max(maxi,x.second.second-x.second.first);
+//         }
         
         
         
