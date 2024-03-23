@@ -12,34 +12,31 @@ class Solution {
 public:
     void reorderList(ListNode* head) {
         
-        //push all nodes into stack and traverse half the size of loop 
+           ListNode* temp=head;
         
         stack<ListNode*> st;
-        
-        ListNode* t=head;
         int size=0;
-        while(t){
-            st.push(t);
+        
+        while(temp){
+            st.push(temp);
+            temp=temp->next;
             size++;
-            t=t->next;
         }
-        
-        t=head;
-        
+        temp=head;
         for(int i=0;i<size/2;i++){
             
-            ListNode* node=st.top();
+            ListNode* top=st.top();
             st.pop();
-            
-           node->next=t->next;
-            t->next=node;
-            t=t->next->next;
-            
+                        
+            top->next=temp->next;
+            temp->next=top;
+            temp=temp->next->next;
             
         }
         
-    
-       t->next=NULL;
+               temp->next=NULL;
+
+        // return head;
         
         
     }
