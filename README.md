@@ -16,6 +16,7 @@ Hello here adding my daily day of leetcode practise codes!
 |  |
 | ------- |
 | [0768-partition-labels](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0768-partition-labels) |
+| [1500-count-largest-group](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1500-count-largest-group) |
 ## Two Pointers
 |  |
 | ------- |
@@ -28,4 +29,8 @@ Hello here adding my daily day of leetcode practise codes!
 |  |
 | ------- |
 | [0768-partition-labels](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0768-partition-labels) |
+## Math
+|  |
+| ------- |
+| [1500-count-largest-group](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1500-count-largest-group) |
 <!---LeetCode Topics End-->
