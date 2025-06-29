@@ -7,6 +7,7 @@ Hello here adding my daily day of leetcode practise codes!
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0001-two-sum) |
 | [0198-house-robber](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0198-house-robber) |
 ## Dynamic Programming
 |  |
@@ -15,6 +16,7 @@ Hello here adding my daily day of leetcode practise codes!
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0001-two-sum) |
 | [0768-partition-labels](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0768-partition-labels) |
 | [1500-count-largest-group](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1500-count-largest-group) |
 ## Two Pointers
