@@ -8,6 +8,7 @@ Hello here adding my daily day of leetcode practise codes!
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0001-two-sum) |
+| [0078-subsets](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0078-subsets) |
 | [0198-house-robber](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0198-house-robber) |
 ## Dynamic Programming
 |  |
@@ -35,4 +36,12 @@ Hello here adding my daily day of leetcode practise codes!
 |  |
 | ------- |
 | [1500-count-largest-group](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1500-count-largest-group) |
+## Backtracking
+|  |
+| ------- |
+| [0078-subsets](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0078-subsets) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0078-subsets](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0078-subsets) |
 <!---LeetCode Topics End-->
