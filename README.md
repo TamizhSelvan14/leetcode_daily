@@ -10,6 +10,7 @@ Hello here adding my daily day of leetcode practise codes!
 | [0001-two-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0001-two-sum) |
 | [0078-subsets](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0078-subsets) |
 | [0198-house-robber](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0198-house-robber) |
+| [1995-finding-pairs-with-a-certain-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1995-finding-pairs-with-a-certain-sum) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -20,6 +21,7 @@ Hello here adding my daily day of leetcode practise codes!
 | [0001-two-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0001-two-sum) |
 | [0768-partition-labels](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0768-partition-labels) |
 | [1500-count-largest-group](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1500-count-largest-group) |
+| [1995-finding-pairs-with-a-certain-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1995-finding-pairs-with-a-certain-sum) |
 ## Two Pointers
 |  |
 | ------- |
@@ -44,4 +46,8 @@ Hello here adding my daily day of leetcode practise codes!
 |  |
 | ------- |
 | [0078-subsets](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0078-subsets) |
+## Design
+|  |
+| ------- |
+| [1995-finding-pairs-with-a-certain-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1995-finding-pairs-with-a-certain-sum) |
 <!---LeetCode Topics End-->
