@@ -8,12 +8,14 @@ Hello here adding my daily day of leetcode practise codes!
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0001-two-sum) |
+| [0053-maximum-subarray](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0053-maximum-subarray) |
 | [0078-subsets](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0078-subsets) |
 | [0198-house-robber](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0198-house-robber) |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1995-finding-pairs-with-a-certain-sum) |
 ## Dynamic Programming
 |  |
 | ------- |
+| [0053-maximum-subarray](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0053-maximum-subarray) |
 | [0198-house-robber](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0198-house-robber) |
 ## Hash Table
 |  |
@@ -50,4 +52,8 @@ Hello here adding my daily day of leetcode practise codes!
 |  |
 | ------- |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1995-finding-pairs-with-a-certain-sum) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0053-maximum-subarray](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0053-maximum-subarray) |
 <!---LeetCode Topics End-->
