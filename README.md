@@ -16,6 +16,7 @@ Hello here adding my daily day of leetcode practise codes!
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0053-maximum-subarray) |
+| [0070-climbing-stairs](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0070-climbing-stairs) |
 | [0198-house-robber](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0198-house-robber) |
 ## Hash Table
 |  |
@@ -39,6 +40,7 @@ Hello here adding my daily day of leetcode practise codes!
 ## Math
 |  |
 | ------- |
+| [0070-climbing-stairs](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0070-climbing-stairs) |
 | [1500-count-largest-group](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1500-count-largest-group) |
 ## Backtracking
 |  |
@@ -56,4 +58,8 @@ Hello here adding my daily day of leetcode practise codes!
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0053-maximum-subarray) |
+## Memoization
+|  |
+| ------- |
+| [0070-climbing-stairs](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0070-climbing-stairs) |
 <!---LeetCode Topics End-->
