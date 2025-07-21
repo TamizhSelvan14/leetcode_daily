@@ -1,35 +1,35 @@
 class Solution {
 public:
-    int solve(int i,int j,int m,int n,vector<vector<int>> &dp){
-        
-        if(i>m or j>n)
-            return 0;
-        
-        if(i==m and j==n)
+    int dp[100+1][100+1];
+    int solve(int m,int n,int i,int j){
+
+
+        if(i==m-1 && j==n-1)
             return 1;
-        
+
+
         if(dp[i][j]!=-1)
-            return dp[i][j];
-        
-        
-        //two possible turns right and down
-        
-        int right=solve(i+1,j,m,n,dp);
-        int down=solve(i,j+1,m,n,dp);
-        
-        
-        return dp[i][j]=right+down;
-        
+        return dp[i][j];
+
+        int down=0;
+        int right=0;
+
+        if(i<m){
+            down=solve(m,n,i+1,j);
+        }
+
+        if(j<n){
+            right=solve(m,n,i,j+1);
+        }
+
+
+
+    return dp[i][j]=down+right;
+
     }
-    
-    
-    
+
     int uniquePaths(int m, int n) {
-        
-        
-        vector<vector<int>> dp(m,vector<int>(n,-1));
-        return solve(0,0,m-1,n-1,dp);
-        
-        
+        memset(dp,-1,sizeof(dp));
+        return solve(m,n,0,0);
     }
 };
