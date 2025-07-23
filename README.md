@@ -12,6 +12,7 @@ Hello here adding my daily day of leetcode practise codes!
 | [0078-subsets](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0078-subsets) |
 | [0198-house-robber](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0198-house-robber) |
 | [0322-coin-change](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0322-coin-change) |
+| [0494-target-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0494-target-sum) |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1995-finding-pairs-with-a-certain-sum) |
 ## Dynamic Programming
 |  |
@@ -21,6 +22,7 @@ Hello here adding my daily day of leetcode practise codes!
 | [0070-climbing-stairs](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0070-climbing-stairs) |
 | [0198-house-robber](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0198-house-robber) |
 | [0322-coin-change](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0322-coin-change) |
+| [0494-target-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0494-target-sum) |
 ## Hash Table
 |  |
 | ------- |
@@ -50,6 +52,7 @@ Hello here adding my daily day of leetcode practise codes!
 |  |
 | ------- |
 | [0078-subsets](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0078-subsets) |
+| [0494-target-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0494-target-sum) |
 ## Bit Manipulation
 |  |
 | ------- |
