@@ -16,6 +16,7 @@ Hello here adding my daily day of leetcode practise codes!
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0494-target-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0494-target-sum) |
 | [0695-max-area-of-island](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0695-max-area-of-island) |
+| [1036-rotting-oranges](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1036-rotting-oranges) |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1995-finding-pairs-with-a-certain-sum) |
 ## Dynamic Programming
 |  |
@@ -83,6 +84,7 @@ Hello here adding my daily day of leetcode practise codes!
 | [0322-coin-change](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0322-coin-change) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0695-max-area-of-island](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0695-max-area-of-island) |
+| [1036-rotting-oranges](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1036-rotting-oranges) |
 ## Combinatorics
 |  |
 | ------- |
@@ -107,6 +109,7 @@ Hello here adding my daily day of leetcode practise codes!
 | [0200-number-of-islands](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0200-number-of-islands) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0695-max-area-of-island](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0695-max-area-of-island) |
+| [1036-rotting-oranges](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1036-rotting-oranges) |
 ## Union Find
 |  |
 | ------- |
