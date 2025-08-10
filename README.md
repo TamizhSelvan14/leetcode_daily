@@ -35,6 +35,7 @@ Hello here adding my daily day of leetcode practise codes!
 | ------- |
 | [0001-two-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0001-two-sum) |
 | [0768-partition-labels](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0768-partition-labels) |
+| [0900-reordered-power-of-2](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0900-reordered-power-of-2) |
 | [1500-count-largest-group](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1500-count-largest-group) |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1995-finding-pairs-with-a-certain-sum) |
 ## Two Pointers
@@ -55,6 +56,7 @@ Hello here adding my daily day of leetcode practise codes!
 | ------- |
 | [0062-unique-paths](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0070-climbing-stairs) |
+| [0900-reordered-power-of-2](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0900-reordered-power-of-2) |
 | [1500-count-largest-group](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1500-count-largest-group) |
 ## Backtracking
 |  |
@@ -121,5 +123,14 @@ Hello here adding my daily day of leetcode practise codes!
 ## Enumeration
 |  |
 | ------- |
+| [0900-reordered-power-of-2](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0900-reordered-power-of-2) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
+## Sorting
+|  |
+| ------- |
+| [0900-reordered-power-of-2](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0900-reordered-power-of-2) |
+## Counting
+|  |
+| ------- |
+| [0900-reordered-power-of-2](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0900-reordered-power-of-2) |
 <!---LeetCode Topics End-->
