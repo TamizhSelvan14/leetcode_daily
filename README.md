@@ -11,6 +11,7 @@ Hello here adding my daily day of leetcode practise codes!
 | [0049-group-anagrams](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0049-group-anagrams) |
 | [0053-maximum-subarray](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0053-maximum-subarray) |
 | [0078-subsets](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0078-subsets) |
+| [0128-longest-consecutive-sequence](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0128-longest-consecutive-sequence) |
 | [0198-house-robber](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0200-number-of-islands) |
 | [0238-product-of-array-except-self](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0238-product-of-array-except-self) |
@@ -38,6 +39,7 @@ Hello here adding my daily day of leetcode practise codes!
 | ------- |
 | [0001-two-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0001-two-sum) |
 | [0049-group-anagrams](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0049-group-anagrams) |
+| [0128-longest-consecutive-sequence](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0128-longest-consecutive-sequence) |
 | [0347-top-k-frequent-elements](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0347-top-k-frequent-elements) |
 | [0768-partition-labels](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0768-partition-labels) |
 | [0900-reordered-power-of-2](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0900-reordered-power-of-2) |
@@ -125,6 +127,7 @@ Hello here adding my daily day of leetcode practise codes!
 ## Union Find
 |  |
 | ------- |
+| [0128-longest-consecutive-sequence](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0128-longest-consecutive-sequence) |
 | [0200-number-of-islands](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0200-number-of-islands) |
 | [0695-max-area-of-island](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0695-max-area-of-island) |
 ## Enumeration
