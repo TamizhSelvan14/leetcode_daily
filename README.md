@@ -13,6 +13,7 @@ Hello here adding my daily day of leetcode practise codes!
 | [0078-subsets](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0078-subsets) |
 | [0198-house-robber](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0200-number-of-islands) |
+| [0238-product-of-array-except-self](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0238-product-of-array-except-self) |
 | [0322-coin-change](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0322-coin-change) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0347-top-k-frequent-elements](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0347-top-k-frequent-elements) |
@@ -154,4 +155,8 @@ Hello here adding my daily day of leetcode practise codes!
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0347-top-k-frequent-elements) |
+## Prefix Sum
+|  |
+| ------- |
+| [0238-product-of-array-except-self](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0238-product-of-array-except-self) |
 <!---LeetCode Topics End-->
