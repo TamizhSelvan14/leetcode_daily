@@ -8,6 +8,7 @@ Hello here adding my daily day of leetcode practise codes!
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0001-two-sum) |
+| [0015-3sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0015-3sum) |
 | [0049-group-anagrams](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0049-group-anagrams) |
 | [0053-maximum-subarray](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0053-maximum-subarray) |
 | [0078-subsets](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0078-subsets) |
@@ -49,6 +50,7 @@ Hello here adding my daily day of leetcode practise codes!
 ## Two Pointers
 |  |
 | ------- |
+| [0015-3sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0015-3sum) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0768-partition-labels](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0768-partition-labels) |
 ## String
@@ -140,6 +142,7 @@ Hello here adding my daily day of leetcode practise codes!
 ## Sorting
 |  |
 | ------- |
+| [0015-3sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0015-3sum) |
 | [0049-group-anagrams](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0049-group-anagrams) |
 | [0347-top-k-frequent-elements](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0347-top-k-frequent-elements) |
 | [0900-reordered-power-of-2](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0900-reordered-power-of-2) |
