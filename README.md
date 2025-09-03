@@ -12,6 +12,7 @@ Hello here adding my daily day of leetcode practise codes!
 | [0053-maximum-subarray](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0053-maximum-subarray) |
 | [0078-subsets](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0078-subsets) |
 | [0128-longest-consecutive-sequence](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0128-longest-consecutive-sequence) |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0198-house-robber](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0200-number-of-islands) |
 | [0238-product-of-array-except-self](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0238-product-of-array-except-self) |
@@ -48,6 +49,7 @@ Hello here adding my daily day of leetcode practise codes!
 ## Two Pointers
 |  |
 | ------- |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0768-partition-labels](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0768-partition-labels) |
 ## String
 |  |
@@ -162,4 +164,8 @@ Hello here adding my daily day of leetcode practise codes!
 |  |
 | ------- |
 | [0238-product-of-array-except-self](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0238-product-of-array-except-self) |
+## Binary Search
+|  |
+| ------- |
+| [0167-two-sum-ii-input-array-is-sorted](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 <!---LeetCode Topics End-->
