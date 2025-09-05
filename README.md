@@ -41,6 +41,7 @@ Hello here adding my daily day of leetcode practise codes!
 |  |
 | ------- |
 | [0001-two-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0001-two-sum) |
+| [0003-longest-substring-without-repeating-characters](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0049-group-anagrams](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0049-group-anagrams) |
 | [0128-longest-consecutive-sequence](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0128-longest-consecutive-sequence) |
 | [0347-top-k-frequent-elements](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0347-top-k-frequent-elements) |
@@ -58,6 +59,7 @@ Hello here adding my daily day of leetcode practise codes!
 ## String
 |  |
 | ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0049-group-anagrams](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0049-group-anagrams) |
 | [0115-distinct-subsequences](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0115-distinct-subsequences) |
 | [0768-partition-labels](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0768-partition-labels) |
@@ -174,4 +176,8 @@ Hello here adding my daily day of leetcode practise codes!
 |  |
 | ------- |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+## Sliding Window
+|  |
+| ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0003-longest-substring-without-repeating-characters) |
 <!---LeetCode Topics End-->
