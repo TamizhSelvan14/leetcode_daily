@@ -9,18 +9,13 @@ public:
         for(int i=0;i<nums.size();i++){
             curr+=nums[i];
             if(curr>=target){
-                // ans=min(ans,i-start+1);
-
                 while(start<=i and curr>=target){
                    ans=min(ans,i-start+1);
                    curr-=nums[start];
                    start++;
                 }
 
-                // curr=0;
-                // start=i+1;
             }
-
 
         }
 
