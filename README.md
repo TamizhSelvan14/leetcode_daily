@@ -23,6 +23,7 @@ Hello here adding my daily day of leetcode practise codes!
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0347-top-k-frequent-elements](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0347-top-k-frequent-elements) |
 | [0494-target-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0494-target-sum) |
+| [0658-find-k-closest-elements](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0658-find-k-closest-elements) |
 | [0695-max-area-of-island](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0695-max-area-of-island) |
 | [1036-rotting-oranges](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1036-rotting-oranges) |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1995-finding-pairs-with-a-certain-sum) |
@@ -57,6 +58,7 @@ Hello here adding my daily day of leetcode practise codes!
 | [0015-3sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0015-3sum) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0189-rotate-array](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0189-rotate-array) |
+| [0658-find-k-closest-elements](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0658-find-k-closest-elements) |
 | [0768-partition-labels](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0768-partition-labels) |
 ## String
 |  |
@@ -153,6 +155,7 @@ Hello here adding my daily day of leetcode practise codes!
 | [0015-3sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0015-3sum) |
 | [0049-group-anagrams](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0049-group-anagrams) |
 | [0347-top-k-frequent-elements](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0347-top-k-frequent-elements) |
+| [0658-find-k-closest-elements](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0658-find-k-closest-elements) |
 | [0900-reordered-power-of-2](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0900-reordered-power-of-2) |
 ## Counting
 |  |
@@ -163,6 +166,7 @@ Hello here adding my daily day of leetcode practise codes!
 |  |
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0347-top-k-frequent-elements) |
+| [0658-find-k-closest-elements](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0658-find-k-closest-elements) |
 ## Bucket Sort
 |  |
 | ------- |
@@ -179,8 +183,10 @@ Hello here adding my daily day of leetcode practise codes!
 |  |
 | ------- |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0658-find-k-closest-elements](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0658-find-k-closest-elements) |
 ## Sliding Window
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0658-find-k-closest-elements](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0658-find-k-closest-elements) |
 <!---LeetCode Topics End-->
