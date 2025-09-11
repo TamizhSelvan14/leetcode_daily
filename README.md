@@ -70,6 +70,7 @@ Hello here adding my daily day of leetcode practise codes!
 | [0003-longest-substring-without-repeating-characters](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0049-group-anagrams](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0049-group-anagrams) |
 | [0115-distinct-subsequences](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0115-distinct-subsequences) |
+| [0394-decode-string](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0394-decode-string) |
 | [0567-permutation-in-string](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0567-permutation-in-string) |
 | [0768-partition-labels](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0768-partition-labels) |
 ## Greedy
@@ -203,4 +204,9 @@ Hello here adding my daily day of leetcode practise codes!
 |  |
 | ------- |
 | [0150-evaluate-reverse-polish-notation](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0150-evaluate-reverse-polish-notation) |
+| [0394-decode-string](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0394-decode-string) |
+## Recursion
+|  |
+| ------- |
+| [0394-decode-string](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0394-decode-string) |
 <!---LeetCode Topics End-->
