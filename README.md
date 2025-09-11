@@ -28,6 +28,7 @@ Hello here adding my daily day of leetcode practise codes!
 | [0658-find-k-closest-elements](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0658-find-k-closest-elements) |
 | [0695-max-area-of-island](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0695-max-area-of-island) |
 | [1036-rotting-oranges](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1036-rotting-oranges) |
+| [1112-find-words-that-can-be-formed-by-characters](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1112-find-words-that-can-be-formed-by-characters) |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1995-finding-pairs-with-a-certain-sum) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
 ## Dynamic Programming
@@ -52,6 +53,7 @@ Hello here adding my daily day of leetcode practise codes!
 | [0567-permutation-in-string](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0567-permutation-in-string) |
 | [0768-partition-labels](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0768-partition-labels) |
 | [0900-reordered-power-of-2](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0900-reordered-power-of-2) |
+| [1112-find-words-that-can-be-formed-by-characters](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1112-find-words-that-can-be-formed-by-characters) |
 | [1500-count-largest-group](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1500-count-largest-group) |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1995-finding-pairs-with-a-certain-sum) |
 ## Two Pointers
@@ -73,6 +75,7 @@ Hello here adding my daily day of leetcode practise codes!
 | [0394-decode-string](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0394-decode-string) |
 | [0567-permutation-in-string](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0567-permutation-in-string) |
 | [0768-partition-labels](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0768-partition-labels) |
+| [1112-find-words-that-can-be-formed-by-characters](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1112-find-words-that-can-be-formed-by-characters) |
 ## Greedy
 |  |
 | ------- |
@@ -170,6 +173,7 @@ Hello here adding my daily day of leetcode practise codes!
 | ------- |
 | [0347-top-k-frequent-elements](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0347-top-k-frequent-elements) |
 | [0900-reordered-power-of-2](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0900-reordered-power-of-2) |
+| [1112-find-words-that-can-be-formed-by-characters](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1112-find-words-that-can-be-formed-by-characters) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
