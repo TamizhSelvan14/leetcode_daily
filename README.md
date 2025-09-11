@@ -101,6 +101,7 @@ Hello here adding my daily day of leetcode practise codes!
 ## Design
 |  |
 | ------- |
+| [0155-min-stack](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0155-min-stack) |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1995-finding-pairs-with-a-certain-sum) |
 ## Divide and Conquer
 |  |
@@ -204,6 +205,7 @@ Hello here adding my daily day of leetcode practise codes!
 |  |
 | ------- |
 | [0150-evaluate-reverse-polish-notation](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0150-evaluate-reverse-polish-notation) |
+| [0155-min-stack](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0155-min-stack) |
 | [0394-decode-string](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0394-decode-string) |
 ## Recursion
 |  |
