@@ -1,27 +1,12 @@
 class MinStack {
 public:
-    
-    //store incoming int and recent min
-    vector<pair<int,int>> arr;
-    
-    
+    vector<int> arr;
     MinStack() {
         
     }
     
     void push(int val) {
-        
-        if(arr.size()==0){
-            arr.push_back({val,val});
-            
-        }else{
-            
-            int minSoFar=arr.back().second;
-            
-            arr.push_back({val,min(val,minSoFar)});
-            
-        }
-        
+        arr.push_back(val);
     }
     
     void pop() {
@@ -29,12 +14,16 @@ public:
     }
     
     int top() {
-        return arr.back().first;
+        return arr[arr.size()-1];
     }
     
     int getMin() {
-        return arr.back().second;
-       
+        int mini=INT_MAX;
+        for(int i=0;i<arr.size();i++){
+            mini=min( mini,arr[i]);
+        }
+
+        return mini;
     }
 };
 
