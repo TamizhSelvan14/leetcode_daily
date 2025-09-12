@@ -76,6 +76,7 @@ Hello here adding my daily day of leetcode practise codes!
 | [0567-permutation-in-string](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0567-permutation-in-string) |
 | [0768-partition-labels](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0768-partition-labels) |
 | [1112-find-words-that-can-be-formed-by-characters](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1112-find-words-that-can-be-formed-by-characters) |
+| [3462-vowels-game-in-a-string](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/3462-vowels-game-in-a-string) |
 ## Greedy
 |  |
 | ------- |
@@ -90,6 +91,7 @@ Hello here adding my daily day of leetcode practise codes!
 | [0189-rotate-array](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0189-rotate-array) |
 | [0900-reordered-power-of-2](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0900-reordered-power-of-2) |
 | [1500-count-largest-group](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1500-count-largest-group) |
+| [3462-vowels-game-in-a-string](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/3462-vowels-game-in-a-string) |
 ## Backtracking
 |  |
 | ------- |
@@ -215,4 +217,12 @@ Hello here adding my daily day of leetcode practise codes!
 |  |
 | ------- |
 | [0394-decode-string](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0394-decode-string) |
+## Brainteaser
+|  |
+| ------- |
+| [3462-vowels-game-in-a-string](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/3462-vowels-game-in-a-string) |
+## Game Theory
+|  |
+| ------- |
+| [3462-vowels-game-in-a-string](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/3462-vowels-game-in-a-string) |
 <!---LeetCode Topics End-->
