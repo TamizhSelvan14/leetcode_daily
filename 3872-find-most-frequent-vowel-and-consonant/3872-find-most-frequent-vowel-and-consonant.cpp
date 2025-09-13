@@ -1,9 +1,9 @@
 class Solution {
 public:
-    bool isVowel(char c)
-    {
-        return (c=='a' or c=='e' or c=='i' or c=='o' or c=='u' );
-    }
+    // bool isVowel(char c)
+    // {
+    //     return (c=='a' or c=='e' or c=='i' or c=='o' or c=='u' );
+    // }
 
 
     int maxFreqSum(string s) {
@@ -11,12 +11,12 @@ public:
         int maxiV=0;
         int maxiC=0;
 
-        for(auto x:s){
-             umap[x]++;
-            if(isVowel(x)){
-                maxiV=max(maxiV,umap[x]);
+        for(auto c:s){
+             umap[c]++;
+            if(c=='a' or c=='e' or c=='i' or c=='o' or c=='u' ){
+                maxiV=max(maxiV,umap[c]);
             }else{
-                maxiC=max(maxiC,umap[x]);
+                maxiC=max(maxiC,umap[c]);
             }
 
         }
