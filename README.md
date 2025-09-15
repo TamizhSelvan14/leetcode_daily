@@ -54,6 +54,7 @@ Hello here adding my daily day of leetcode practise codes!
 | [0768-partition-labels](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0768-partition-labels) |
 | [0900-reordered-power-of-2](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0900-reordered-power-of-2) |
 | [1112-find-words-that-can-be-formed-by-characters](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1112-find-words-that-can-be-formed-by-characters) |
+| [1264-maximum-number-of-words-you-can-type](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1264-maximum-number-of-words-you-can-type) |
 | [1500-count-largest-group](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1500-count-largest-group) |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1995-finding-pairs-with-a-certain-sum) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/3872-find-most-frequent-vowel-and-consonant) |
@@ -77,6 +78,7 @@ Hello here adding my daily day of leetcode practise codes!
 | [0567-permutation-in-string](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0567-permutation-in-string) |
 | [0768-partition-labels](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0768-partition-labels) |
 | [1112-find-words-that-can-be-formed-by-characters](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1112-find-words-that-can-be-formed-by-characters) |
+| [1264-maximum-number-of-words-you-can-type](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1264-maximum-number-of-words-you-can-type) |
 | [3462-vowels-game-in-a-string](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/3462-vowels-game-in-a-string) |
 | [3872-find-most-frequent-vowel-and-consonant](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/3872-find-most-frequent-vowel-and-consonant) |
 ## Greedy
