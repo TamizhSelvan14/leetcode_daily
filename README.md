@@ -12,6 +12,7 @@ Hello here adding my daily day of leetcode practise codes!
 | [0015-3sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0015-3sum) |
 | [0049-group-anagrams](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0049-group-anagrams) |
 | [0053-maximum-subarray](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0053-maximum-subarray) |
+| [0074-search-a-2d-matrix](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0074-search-a-2d-matrix) |
 | [0078-subsets](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0078-subsets) |
 | [0128-longest-consecutive-sequence](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0128-longest-consecutive-sequence) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0150-evaluate-reverse-polish-notation) |
@@ -151,6 +152,7 @@ Hello here adding my daily day of leetcode practise codes!
 ## Matrix
 |  |
 | ------- |
+| [0074-search-a-2d-matrix](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0074-search-a-2d-matrix) |
 | [0200-number-of-islands](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0200-number-of-islands) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0695-max-area-of-island](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0695-max-area-of-island) |
@@ -202,6 +204,7 @@ Hello here adding my daily day of leetcode practise codes!
 ## Binary Search
 |  |
 | ------- |
+| [0074-search-a-2d-matrix](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0074-search-a-2d-matrix) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0209-minimum-size-subarray-sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0209-minimum-size-subarray-sum) |
 | [0658-find-k-closest-elements](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0658-find-k-closest-elements) |
