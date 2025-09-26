@@ -139,6 +139,7 @@ Hello here adding my daily day of leetcode practise codes!
 ## Breadth-First Search
 |  |
 | ------- |
+| [0104-maximum-depth-of-binary-tree](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0200-number-of-islands](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0200-number-of-islands) |
 | [0226-invert-binary-tree](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0226-invert-binary-tree) |
 | [0322-coin-change](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0322-coin-change) |
@@ -152,6 +153,7 @@ Hello here adding my daily day of leetcode practise codes!
 ## Depth-First Search
 |  |
 | ------- |
+| [0104-maximum-depth-of-binary-tree](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0200-number-of-islands](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0200-number-of-islands) |
 | [0226-invert-binary-tree](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0226-invert-binary-tree) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0329-longest-increasing-path-in-a-matrix) |
@@ -257,9 +259,11 @@ Hello here adding my daily day of leetcode practise codes!
 ## Tree
 |  |
 | ------- |
+| [0104-maximum-depth-of-binary-tree](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0226-invert-binary-tree](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0226-invert-binary-tree) |
 ## Binary Tree
 |  |
 | ------- |
+| [0104-maximum-depth-of-binary-tree](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0104-maximum-depth-of-binary-tree) |
 | [0226-invert-binary-tree](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0226-invert-binary-tree) |
 <!---LeetCode Topics End-->
