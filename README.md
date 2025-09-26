@@ -140,6 +140,7 @@ Hello here adding my daily day of leetcode practise codes!
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0200-number-of-islands) |
+| [0226-invert-binary-tree](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0226-invert-binary-tree) |
 | [0322-coin-change](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0322-coin-change) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0695-max-area-of-island](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0695-max-area-of-island) |
@@ -152,6 +153,7 @@ Hello here adding my daily day of leetcode practise codes!
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0200-number-of-islands) |
+| [0226-invert-binary-tree](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0226-invert-binary-tree) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0695-max-area-of-island](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0695-max-area-of-island) |
 ## Graph
@@ -252,4 +254,12 @@ Hello here adding my daily day of leetcode practise codes!
 |  |
 | ------- |
 | [3462-vowels-game-in-a-string](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/3462-vowels-game-in-a-string) |
+## Tree
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0226-invert-binary-tree) |
+## Binary Tree
+|  |
+| ------- |
+| [0226-invert-binary-tree](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0226-invert-binary-tree) |
 <!---LeetCode Topics End-->
