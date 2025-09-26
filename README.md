@@ -20,6 +20,7 @@ Hello here adding my daily day of leetcode practise codes!
 | [0150-evaluate-reverse-polish-notation](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0169-majority-element](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0169-majority-element) |
 | [0189-rotate-array](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0189-rotate-array) |
 | [0198-house-robber](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0200-number-of-islands) |
@@ -55,6 +56,7 @@ Hello here adding my daily day of leetcode practise codes!
 | [0003-longest-substring-without-repeating-characters](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0049-group-anagrams](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0049-group-anagrams) |
 | [0128-longest-consecutive-sequence](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0128-longest-consecutive-sequence) |
+| [0169-majority-element](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0347-top-k-frequent-elements) |
 | [0567-permutation-in-string](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0567-permutation-in-string) |
 | [0768-partition-labels](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0768-partition-labels) |
@@ -127,6 +129,7 @@ Hello here adding my daily day of leetcode practise codes!
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0053-maximum-subarray) |
+| [0169-majority-element](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0347-top-k-frequent-elements) |
 ## Memoization
 |  |
@@ -183,12 +186,14 @@ Hello here adding my daily day of leetcode practise codes!
 | ------- |
 | [0015-3sum](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0015-3sum) |
 | [0049-group-anagrams](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0049-group-anagrams) |
+| [0169-majority-element](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0347-top-k-frequent-elements) |
 | [0658-find-k-closest-elements](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0658-find-k-closest-elements) |
 | [0900-reordered-power-of-2](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0900-reordered-power-of-2) |
 ## Counting
 |  |
 | ------- |
+| [0169-majority-element](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0169-majority-element) |
 | [0347-top-k-frequent-elements](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0347-top-k-frequent-elements) |
 | [0900-reordered-power-of-2](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/0900-reordered-power-of-2) |
 | [1112-find-words-that-can-be-formed-by-characters](https://github.com/TamizhSelvan14/leetcode_daily/tree/master/1112-find-words-that-can-be-formed-by-characters) |
